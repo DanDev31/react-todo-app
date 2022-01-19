@@ -1,0 +1,27 @@
+.todo-button{
+
+    align-items: center;
+    background-color:#e74c3c;
+    border: none;
+    border-radius: 50%;
+    color:#fdfefe;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 64px;
+    font-size: 40px;
+    font-weight: bold;
+    bottom: 100px;
+    outline: none;
+    position: fixed;
+    right: 700px;
+    width: 64px;
+    z-index: 10;
+
+    transform: rotate(0);
+    transition: .1s ease-in-out;
+}
+
+.todo-button:hover{
+    transform: rotate(40deg)
+}

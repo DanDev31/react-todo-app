@@ -1,0 +1,46 @@
+.modal__form{
+    align-items: center;
+    background-color:rgb(189, 147, 110);
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    height: 300px;
+    width: 400px;
+}
+
+.modal__form-elements{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal__form-elements label{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal__form-textarea{
+    font-size: 14px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    width: 250px;
+    height: 80px;
+    padding: 5px;
+    outline: none;
+    resize: none;
+}
+
+.modal__form-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.modal__form-button{
+    background-color: rgb(112, 32, 32);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 14px;
+    padding: 8px 15px;
+}

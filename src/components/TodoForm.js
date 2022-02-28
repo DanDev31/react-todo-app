@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { TodoContext } from '../context'
 
+import '../styles/todoForm.css'
+
 function TodoForm() {
 
     const [newTodoValue, setNewTodoValue] = useState('')
@@ -21,27 +23,36 @@ function TodoForm() {
     }
 
     return (
-        <form onSubmit = { onSubmit }>
-            <label></label>
-            <textarea
-            value = { newTodoValue }
-            onChange={ onChange }
-            placeholder='Añade un nuevo TODO'
-            ></textarea>
-            <div>
-                <button
-                type = 'button'
-                onCancel = { onCancel }
-                >
-                    Cancelar
-                </button>
+        <form 
+        onSubmit = { onSubmit }
+        className="modal__form"
+        >
+            <div className='modal__form-elements'>
+                <label>Tu nuevo ToDo</label>
+                <textarea
+                value = { newTodoValue }
+                onChange={ onChange }
+                placeholder='Añade un nuevo TODO'
+                className='modal__form-textarea'
+                ></textarea>
+                <div className='modal__form-buttons'>
+                    <button
+                    type = 'button'
+                    onCancel = { onCancel }
+                    className="modal__form-button"
+                    >
+                        Cancelar
+                    </button>
 
-                <button
-                type = 'submit'
-                >
-                    Añadir
-                </button>
+                    <button
+                    type = 'submit'
+                    className="modal__form-button"
+                    >
+                        Añadir
+                    </button>
+                </div>
             </div>
+            
         </form>
     )
 }
